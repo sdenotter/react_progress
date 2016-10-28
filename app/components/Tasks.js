@@ -19,7 +19,7 @@ var Tasks = React.createClass({
         return (
             <div>
                 <ul style={taskStyle}>
-                    {this.props.data.map(({id, task}) =><li key={id}><Task onDelete={this.props.onDelete.bind(null, id)} task={task} /></li>)}
+                    {this.props.data.map(({id, task}) =><li key={id}><Task refs={id} onInput={this.props.onInput.bind(null, id)} onDelete={this.props.onDelete.bind(null, id)} task={task} /></li>)}
                 </ul>
             </div>
         )
