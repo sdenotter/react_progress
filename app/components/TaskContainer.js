@@ -3,6 +3,8 @@ var Tasks = require('./Tasks.js');
 var headerStyle = require('../styles').headerStyle;
 var backgroundStyle = require("../styles").backgroundStyle;
 var marginTop = require("../styles").marginTop;
+var ReactRouter = require("react-router")
+var Link = ReactRouter.Link;
 
 
 
@@ -67,6 +69,7 @@ var TaskContainer = React.createClass({
         e.stopPropagation()
         var tempTask = this.state.tasks
         var temp = tempTask.filter(note => note.id !== id)
+        clearInterval(this.incrementer)
         this.setState({
             taskname: '',
             tasks: temp

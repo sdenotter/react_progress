@@ -11,16 +11,16 @@ var TaskContainer = require("../components/TaskContainer.js")
 
 
 
+
 var routes = (
   <Router history = {hashHistory}>
     <Route path='/' component = {Main}>
         <IndexRoute  component = {Home} />
         <Route path="container_1" component ={TaskContainer} />
         
-        
-        
-    
     </Route>
+    
+   
   
   </Router>
     
