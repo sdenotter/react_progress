@@ -20,6 +20,7 @@
     "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
+    "mongodb": "^2.2.11",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-router": "^2.8.1",

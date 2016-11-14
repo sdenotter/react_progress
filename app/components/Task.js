@@ -3,6 +3,33 @@ var timerStyle = require('../styles').timerStyle;
 var buttonStyle = require('../styles').buttonStyle;
 var Timer = require('timer-stopwatch');
 
+var formatTime = function(seconds){
+    var s = seconds;
+    var m = 0;
+    var h = 0;
+    
+    while(s >= 60){
+        if (s >= 60){
+            m += 1;
+            s -=60
+        }
+        if (m >= 60) {
+            h += 1;
+            m -= 0;
+        }
+    }
+    if (s < 10){
+        s = "0" + s.toString();
+    }
+    if (m < 10){
+        m = "0" + m.toString();
+    }
+    return "[" + h + ":" + m + ":" + s +"]"
+    
+}
+
+
+
 var mTop = function(rem) {
     return (
         {
@@ -73,6 +100,7 @@ var Task = React.createClass({
          
      },
      
+     
     render: function() {
         
         return (
@@ -88,7 +116,7 @@ var Task = React.createClass({
                 </div>
                 
                 <div className="columns small-3">
-                    <span id="timer">{this.state.secondsElapsed}</span>
+                    <span id="timer">{formatTime(this.state.secondsElapsed)}</span>
                 </div>
                 <div className="columns small-2">
                     <button className="button tiny secondary" onClick={this.props.onDelete} style={mTop(0.7)} >X</button>

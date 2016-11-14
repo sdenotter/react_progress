@@ -136,6 +136,8 @@ var TaskContainer = React.createClass({
                         <div className="row">
                             <br/><br/><br/>
                             <button className="button alert" onClick={() => console.log(this.state.tasks) }>ShowState</button>
+                            &nbsp; &nbsp; &nbsp; &nbsp;
+                            <button className="button alert" onClick={() => console.log() }>DBSTUFF</button>
                         </div>
                     </div>
                 </div>

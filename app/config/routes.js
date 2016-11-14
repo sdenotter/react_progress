@@ -6,7 +6,6 @@ var IndexRoute = ReactRouter.IndexRoute;
 var Main = require("../components/Main")
 var Home = require("../components/Home")
 var hashHistory = ReactRouter.hashHistory;
-var PromptContainer = require("../containers/PromptContainer.js")
 var TaskContainer = require("../components/TaskContainer.js")
 
 
