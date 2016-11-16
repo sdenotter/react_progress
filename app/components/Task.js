@@ -1,7 +1,7 @@
 var React = require('react');
 var timerStyle = require('../styles').timerStyle;
 var buttonStyle = require('../styles').buttonStyle;
-var Timer = require('timer-stopwatch');
+
 
 var formatTime = function(seconds){
     var s = seconds;

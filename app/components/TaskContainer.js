@@ -8,8 +8,6 @@ var Link = ReactRouter.Link;
 
 
 
-
-
 var TaskContainer = React.createClass({
     
     // Set Initial State and data structure for Application

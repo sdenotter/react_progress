@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --port 8085",
-    "prod": "webpack -p"
+    "prod": "webpack -p",
+    "server": "babel-node app/server.js --presets es2015"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.18.0",
     "css-loader": "^0.25.0",
     "html-webpack-plugin": "^2.22.0",
     "style-loader": "^0.13.1",
@@ -20,10 +23,10 @@
     "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "mongodb": "^2.2.11",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-router": "^2.8.1",
-    "timer-stopwatch": "^0.2.0"
+    "react-router": "^2.8.1"
   }
 }
