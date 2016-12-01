@@ -1,8 +1,8 @@
 var React = require('react');
 var Task = require("./Task.js")
-var headerStyle = require('../styles').headerStyle;
-var backgroundStyle = require("../styles").backgroundStyle
-var marginTop = require("../styles").marginTop
+var headerStyle = require('../static/css').headerStyle;
+var backgroundStyle = require("../static/css").backgroundStyle
+var marginTop = require("../static/css").marginTop
 
 
 var taskStyle= {

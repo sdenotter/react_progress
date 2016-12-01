@@ -1,6 +1,9 @@
 var React = require('react');
-var timerStyle = require('../styles').timerStyle;
-var buttonStyle = require('../styles').buttonStyle;
+var timerStyle = require('../static/css').timerStyle;
+var buttonStyle = require('../static/css').buttonStyle;
+var play = require("../static/images/play.png");
+var pause = require("../static/images/pause.png");
+
 
 
 var formatTime = function(seconds){
@@ -53,9 +56,9 @@ var Task = React.createClass({
      getImage: function(){
          var curr = this.state.isPaused
          if(curr){
-         return("../../ext/images/play.png")
+         return(play)
          } else {
-             return ("../../ext/images/pause.png")
+             return (pause)
          }
      },
      startClick: function(){

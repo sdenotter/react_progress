@@ -6,7 +6,14 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline --port 8085",
     "prod": "webpack -p",
-    "server": "babel-node app/server.js --presets es2015"
+    "server": "babel-node app/server.js --presets es2015",
+    "server2": "node app/server2.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -23,10 +30,17 @@
     "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
+    "ejs": "^2.5.2",
     "express": "^4.14.0",
+    "file-loader": "^0.9.0",
+    "firebase": "^3.6.2",
+    "image-webpack-loader": "^3.0.0",
     "mongodb": "^2.2.11",
+    "morgan": "^1.7.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-router": "^2.8.1"
+    "react-router": "^2.8.1",
+    "reactfire": "^1.0.0",
+    "url-loader": "^0.5.7"
   }
 }
